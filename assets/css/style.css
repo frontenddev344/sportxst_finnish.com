@@ -332,12 +332,14 @@ span.red {
     background: transparent;
     backdrop-filter: blur(0.625rem);
 }
+
 .header-container.scrolled {
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(0rem);
     border: 0.0625rem solid #f05a28;
-    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.6);
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.6);
 }
+
 .header_logo img {
     max-width: 5.625rem;
 }
@@ -497,6 +499,7 @@ span.red {
     border: none;
     font-family: "Hanken Grotesk", sans-serif;
 }
+
 .arrow {
     display: inline-block;
     margin-right: 6px;
@@ -505,15 +508,20 @@ span.red {
 }
 
 @keyframes softBounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
+
     50% {
-        transform: translateY(6px); /* very subtle */
+        transform: translateY(6px);
+        /* very subtle */
         opacity: 0.7;
     }
 }
+
 .banner_content p {
     max-width: 50rem;
     line-height: 1.6;
@@ -685,9 +693,11 @@ span.red {
     font-weight: 600;
     font-size: 2.5rem;
 }
+
 h3.badge_heading {
     font-size: 1.2rem;
 }
+
 .collection-card p {
     color: #555;
     font-size: 1.1rem;
@@ -819,9 +829,11 @@ h3.badge_heading {
 .built-by-section .main-img img {
     max-width: 34.375rem;
 }
+
 .fan-content h3 {
     font-size: 1.5rem;
 }
+
 /* Home Built Section CSS End */
 
 
@@ -1080,7 +1092,7 @@ h3.badge_heading {
 }
 
 .social-icons li a:hover svg {
-   fill: #f05a28;
+    fill: #f05a28;
 }
 
 .footer-top h3 {
@@ -1113,12 +1125,15 @@ h3.badge_heading {
     max-width: 20.625rem;
     line-height: 1.3;
 }
+
 .site-footer .footer-content p {
     text-align: left;
 }
-.site-footer  .footer-bottom a{
-    color:#f05a28 !important;
+
+.site-footer .footer-bottom a {
+    color: #f05a28 !important;
 }
+
 /* footer end  */
 
 /* Jersey Page CSS Start */
@@ -1426,7 +1441,8 @@ h3.badge_heading {
     font-weight: 600;
 }
 
-.jersey_form_group input, .jersey_form_group textarea {
+.jersey_form_group input,
+.jersey_form_group textarea {
     width: 100%;
     padding: 0.75rem;
     border-radius: 0.625rem;
@@ -1507,7 +1523,7 @@ h3.badge_heading {
     border: 0.0625rem solid rgba(255, 255, 255, 0.05);
     overflow: hidden;
     min-height: 17.8125rem;
-    transition:0.4s all ease-in-out
+    transition: 0.4s all ease-in-out
 }
 
 .shipping-card:hover {
@@ -1535,15 +1551,18 @@ h3.badge_heading {
 
 /* BREATHING KEYFRAME */
 @keyframes badgeBreathe {
-    0%, 100% {
-      transform: scale(1);
-      box-shadow: 0 0 0 rgba(240,90,40,0.0);
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(240, 90, 40, 0.0);
     }
+
     50% {
-      transform: scale(1.08);
-      box-shadow: 0 0.375rem 1.125rem #f05a28;
+        transform: scale(1.08);
+        box-shadow: 0 0.375rem 1.125rem #f05a28;
     }
-  }
+}
 
 .shipping-content {
     margin-top: 2.5rem;
@@ -1581,30 +1600,32 @@ h3.badge_heading {
 /* Privacy Pages CSS Start */
 .last-update {
     padding: 2.5rem 0;
-  }
-  
-  
-  .last-update-content:not(:last-child) {
+}
+
+
+.last-update-content:not(:last-child) {
     margin-bottom: 1.875rem;
-  }
-  
-  .last-update-content p {
+}
+
+.last-update-content p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75rem;
     color: #fff;
     margin-bottom: 0;
-  }
-  
-  .last-update-content h4, .last-update-content h3, .last-update-content h2 {
+}
+
+.last-update-content h4,
+.last-update-content h3,
+.last-update-content h2 {
     color: #fff;
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: .5rem;
     margin-bottom: 0.9375rem;
 }
-  
-  .last-update-content ul li {
+
+.last-update-content ul li {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75rem;
@@ -1612,9 +1633,9 @@ h3.badge_heading {
     position: relative;
     padding-bottom: 0.625rem;
     padding-left: 1.25rem;
-  }
-  
-  .last-update-content ul li::before {
+}
+
+.last-update-content ul li::before {
     content: '';
     width: 0.5rem;
     height: 0.5rem;
@@ -1623,22 +1644,23 @@ h3.badge_heading {
     left: 0;
     top: 0.625rem;
     border-radius: 50%;
-  }
-  
-  .last-update-content-wrap {
+}
+
+.last-update-content-wrap {
     background: #141719;
     padding: 1.875rem;
     border-radius: 0.75rem;
     margin-top: -7.5rem;
-  }
-  
-  .last-update-content p a {
+}
+
+.last-update-content p a {
     color: #eb592a;
-  }
-  
-  .last-update-content p a:hover {
+}
+
+.last-update-content p a:hover {
     color: #fff;
-  }  
+}
+
 /* Privacy Pages CSS Start */
 
 /* Loader CSS Start */
@@ -1706,16 +1728,17 @@ h3.badge_heading {
     opacity: 0;
     transform: translateY(100%);
     transition: all 500ms ease-out;
-    border:3px solid #eb592a;
+    border: 3px solid #eb592a;
     border-radius: 1.875rem;
-  }
-  
-  .cookie-alert.show {
+}
+
+.cookie-alert.show {
     opacity: 1;
     transform: translateY(0%);
     transition-delay: 1000ms;
-  }
-  .cookie-alert .card-title {
+}
+
+.cookie-alert .card-title {
     font-size: 1.5rem;
     font-family: 'Hanken Grotesk';
     font-weight: 600;
@@ -1729,16 +1752,19 @@ h3.badge_heading {
     color: #4b5563;
     font-weight: 600;
 }
-.cookie-alert .card-text a{
+
+.cookie-alert .card-text a {
     color: #d94e1f;
     text-decoration: underline;
     text-underline-offset: 5px;
     font-family: "Hanken Grotesk", sans-serif;
 }
+
 .btn-toolbar .butn {
     padding: 0.625rem 1.25rem;
     font-size: 0.9375rem;
 }
+
 /* Cookies CSS End */
 
 
@@ -1751,7 +1777,7 @@ h3.badge_heading {
     padding: 18px;
     border-radius: 12px;
     width: 320px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     opacity: 0;
     visibility: hidden;
     transform: translateY(30px);
@@ -1822,7 +1848,8 @@ button.scroll_down {
     cursor: pointer;
     outline: none;
 }
-  button.scroll_down:before {
+
+button.scroll_down:before {
     position: absolute;
     top: 10px;
     left: 50%;
@@ -1835,51 +1862,57 @@ button.scroll_down {
     -webkit-animation: scroll_down_btn-animation 2s infinite;
     animation: scroll_down_btn-animation 2s infinite;
     box-sizing: border-box;
-  }
-  
-  @keyframes scroll_down_btn-animation {
+}
+
+@keyframes scroll_down_btn-animation {
     0% {
-      transform: translate(0, 0);
-      opacity: 0;
+        transform: translate(0, 0);
+        opacity: 0;
     }
+
     40% {
-      opacity: 1;
+        opacity: 1;
     }
+
     80% {
-      transform: translate(0, 20px);
-      opacity: 0;
+        transform: translate(0, 20px);
+        opacity: 0;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  @-webkit-keyframes scroll_down_btn-animation {
+}
+
+@-webkit-keyframes scroll_down_btn-animation {
     0% {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-      opacity: 0;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 0;
     }
+
     40% {
-      opacity: 1;
+        opacity: 1;
     }
+
     80% {
-      -webkit-transform: translate(0, 20px);
-      transform: translate(0, 20px);
-      opacity: 0;
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+        opacity: 0;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
+}
 
 
 
 
 
-  /* Language Translator CSS Start */
-  .language-switcher {
+
+/* Language Translator CSS Start */
+.language-switcher {
     position: relative;
     display: inline-block;
 }
@@ -1894,7 +1927,7 @@ button.scroll_down {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
 }
 
@@ -1903,8 +1936,8 @@ button.scroll_down {
 }
 
 .lang-btn img {
-    width: 28px;
-    height: 28px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -1919,7 +1952,7 @@ button.scroll_down {
     background: #fff;
     border-radius: 12px;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
     opacity: 0;
     visibility: hidden;
@@ -1958,4 +1991,11 @@ button.scroll_down {
     border-radius: 3px;
 }
 
-  /* Language Translator CSS End */
+@media screen and (max-width:480px) {
+    .lang-btn {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* Language Translator CSS End */
