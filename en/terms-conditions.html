@@ -32,9 +32,27 @@
                     <a href="./shipping">Shipping</a>
                     <a class="btn-touch" href="./contact-us">Contact Us</a>
                 </div>
-                <div class="d-flex align-items-center gap-2">
+                 <div class="d-flex align-items-center gap-2">
                     <a class="btn-outline-custom d-none d-lg-block" href="./jerseys">Explore Now</a>
                     <span class="menu-toggle" onclick="openMenu()">☰</span>
+                    <div class="language-switcher">
+                        <button class="lang-btn" id="langBtn">
+                            <img id="currentFlag" src="./assets/images/english_flag.png" alt="Finnish">
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <div class="lang-option" data-lang="fi" data-flag="./assets/images/finland_flag.svg"
+                                data-url="./fi/">
+                                <img src="./assets/images/finland_flag.svg" alt="Finnish">
+                                <span>Finnish</span>
+                            </div>
+                            <div class="lang-option" data-lang="en" data-flag="./assets/images/english_flag.png"
+                                data-url="./en/">
+
+                                <img src="./assets/images/english_flag.png" alt="English">
+                                <span>English</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="sidebar" class="sidebar">
                     <div class="close-btn" onclick="closeMenu()">✕</div>
