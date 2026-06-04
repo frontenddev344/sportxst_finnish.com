@@ -17,462 +17,459 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>SportXST - Ensiluokkaiset koripallopaidat | Osta NBA- ja räätälöityjä pelipaitoja verkosta</title>
-</head>
-
-
-
-<style>
-    span.min-dep-v {
-        position: relative;
-        top: 2px;
-    }
-
-    .pr-img-wrapper.blue-re {
-        background: #232272;
-    }
-
-    .pr-img-wrapper.funn-blue {
-        background: #000a3f;
-    }
-
-    .pr-img-wrapper {
-        min-height: 100px;
-        max-height: 100px;
-    }
-
-    .pr-img-wrapper a {
-        height: 100%;
-        width: 100%;
-    }
-
-    .pr-img-wrapper.bg_blue {
-        background-color: #023262;
-    }
-
-    .betting-sites-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: -1;
-    }
-
-    .tp-heding-text h2 {
-        color: #fff;
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    .tp-heding-text p {
-        color: #fff;
-        margin-bottom: 0;
-    }
-
-    .pr-container {
-        margin-bottom: 20px;
-    }
-
-    .table-header {
-        width: 100%;
-        background: #142f28;
-        display: flex;
-    }
-
-    .tp-heding-text {
-        margin-bottom: 30px;
-    }
-
-    .table-header span {
-        padding: 10px 10px;
-        font-size: 1.1rem;
-        width: 20%;
-        text-align: center;
-        font-weight: 500;
-        color: #fff;
-    }
-
-    .pr-list .pr-item {
-        display: flex;
-        align-items: center;
-        background: #f1f1f1;
-        color: #000;
-        text-align: center;
-        padding: 0 0;
-        transition: all .3s;
-        min-height: 95px;
-        position: relative;
-        margin-left: 0;
-        margin-right: 0;
-        overflow: hidden;
-    }
-
-    .pr-list .pr-item .pr-item-content {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-
-    }
-
-    .pr-item-mobile .pr-item-content {
-        margin-bottom: 20px;
-    }
-
-    .pr-list .pr-item .pr-img-wrapper {
-        background: #fff;
-        width: 201px;
-        padding: 12px;
-        box-shadow: 0 0 7px 0 rgba(0, 0, 0, .1);
-    }
-
-    .pr-list .pr-item .pr-title-block {
-        width: 24%;
-        padding: 5px 15px;
-        position: relative;
-        align-items: center;
-        vertical-align: middle;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .promote-star {
-        width: 20%;
-        text-align: center;
-        vertical-align: middle;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .promote-star {
-        width: 20%;
-        text-align: center;
-        vertical-align: middle;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .numer {
-        width: 20%;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .button-tp {
-        width: 20%;
-        align-items: center;
-        vertical-align: middle;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .star-wrapper {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .star svg {
-        color: #f4bd51;
-        width: 20px;
-        height: 20px;
-    }
-
-    .pr-list .pr-item .pr-title-block::after {
-        content: "";
-        border-width: 20px 9px 20px 17px;
-        border-color: transparent transparent transparent #fff;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        border-style: solid;
-        margin-top: -20px;
-        filter: drop-shadow(2px 0px 1px #ccc);
-    }
-
-
-
-    .pr-item-content {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-    }
-
-    .pr-item-content .left {
-        background: #fff;
-        box-shadow: 1px 0 4px 0 rgba(0, 0, 0, .25);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0;
-        width: 50%;
-        flex: 1;
-        padding: 10px;
-    }
-
-    .pr-item-content .right {
-        position: relative;
-        width: 50%;
-        display: flex;
-        background: #15181e;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 5px;
-        padding: 10px 15px 12px;
-        flex: 1;
-
-        text-align: center;
-    }
-
-    .pr-description {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-    }
-
-    .pr-item-content .right .pr-title-block::after {
-        content: "";
-        border-width: 20px 9px 20px 17px;
-        border-color: transparent transparent transparent #fff;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        border-style: solid;
-        margin-top: -20px;
-    }
-
-    .right .pr-sub-title {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 10px;
-        color: #fff;
-        letter-spacing: 0.5px;
-        font-family: "Montserrat", sans-serif;
-    }
-
-    .pr-title {
-        font-size: 13px;
-        color: #fff;
-        font-family: "Open Sans", sans-serif;
-    }
-
-    .pr-item-content .right .button-tp {
-        width: 100%;
-        padding: 0;
-        margin-top: 10px;
-    }
-
-    .left .star svg {
-
-        width: 15px;
-        height: 15px;
-    }
-
-    .mobile-view {
-        display: none;
-    }
-
-
-
-    .content-tp-footer-inner h5 {
-        color: #fff;
-        font-weight: bold;
-        font-size: 24px;
-        margin: 20px 0;
-    }
-
-    .content-tp-footer-inner p {
-        font-size: 16px;
-        margin: 30px 0 0 0;
-    }
-
-    .content-tp-footer-inner ul li {
-        color: #fff;
-        font-size: 16px;
-        padding-left: 20px;
-        position: relative;
-        margin-bottom: 10px;
-    }
-
-    .content-tp-footer-inner ul li strong {
-        color: #0b890e;
-    }
-
-    .content-tp-footer-inner ul li::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        color: #0b890e;
-        width: 6px;
-        height: 6px;
-        background: #0b890e;
-        border-radius: 50%;
-        top: 10px;
-
-    }
-
-    footer.footer {
-        background: #000;
-        padding: 20px 0;
-        border-top: 1px solid #343434;
-    }
-
-    .footer-content p {
-        color: #fff;
-        font-size: 16px;
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .footer-content a {
-        color: #0b890e;
-        text-decoration: none;
-    }
-
-    .button-tp a {
-        padding: .7rem 1.75rem;
-        background: #f05a28;
-        border-radius: 999px;
-        font-size: 15px;
-        font-weight: 600;
-        color: #fff;
-        text-transform: capitalize;
-        transition: all 0.3s ease;
-        display: inline-block;
-        /*margin-top: 20px;*/
-    }
-
-    .top-brands {
-        padding-bottom: 25px;
-    }
-
-    .pr-img-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    .top-canadian-casinos {
-        margin: 40px 0;
-    }
-
-
-    .top-canadian-casinos h2 span {
-        color: #0b890e;
-    }
-
-    .tp-banner {
-        position: relative;
-        height: 15rem;
-        background-position: center;
-        background-size: contain;
-        padding: 215px 0 129px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tp-banner:after {
-        content: "";
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0 0 0/70%);
-        background-blend-mode: multiply;
-    }
-
-    .tp-banner-text-group h2 {
-        color: #f05a28;
-        text-align: center;
-        padding: 0 0.9375rem;
-        font-size: 1.8rem;
-        margin: 0 auto;
-        max-width: 28.875rem;
-        font-weight: 600;
-    }
-
-    .pr-img-wrapper {
-        background: #000;
-        width: 100%;
-    }
-
-    .tp-banner-text {
-        z-index: 1111;
-        position: relative;
-    }
-
-    .tp_content {
-        padding: 30px 15px;
-    }
-
-    .pr-img-wrapper.bg_drk {
-        /*min-height: 100px;*/
-        background-color: #000;
-        padding: 10px;
-    }
-
-    @media(max-width:575px) {
-
-        .desktop {
-            display: block !important;
+    <style>
+        span.min-dep-v {
+            position: relative;
+            top: 2px;
         }
-
+    
+        .pr-img-wrapper.blue-re {
+            background: #232272;
+        }
+    
+        .pr-img-wrapper.funn-blue {
+            background: #000a3f;
+        }
+    
+        .pr-img-wrapper {
+            min-height: 100px;
+            max-height: 100px;
+        }
+    
+        .pr-img-wrapper a {
+            height: 100%;
+            width: 100%;
+        }
+    
+        .pr-img-wrapper.bg_blue {
+            background-color: #023262;
+        }
+    
+        .betting-sites-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+    
+        .tp-heding-text h2 {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    
+        .tp-heding-text p {
+            color: #fff;
+            margin-bottom: 0;
+        }
+    
+        .pr-container {
+            margin-bottom: 20px;
+        }
+    
+        .table-header {
+            width: 100%;
+            background: #142f28;
+            display: flex;
+        }
+    
+        .tp-heding-text {
+            margin-bottom: 30px;
+        }
+    
+        .table-header span {
+            padding: 10px 10px;
+            font-size: 1.1rem;
+            width: 20%;
+            text-align: center;
+            font-weight: 500;
+            color: #fff;
+        }
+    
+        .pr-list .pr-item {
+            display: flex;
+            align-items: center;
+            background: #f1f1f1;
+            color: #000;
+            text-align: center;
+            padding: 0 0;
+            transition: all .3s;
+            min-height: 95px;
+            position: relative;
+            margin-left: 0;
+            margin-right: 0;
+            overflow: hidden;
+        }
+    
+        .pr-list .pr-item .pr-item-content {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+    
+        }
+    
+        .pr-item-mobile .pr-item-content {
+            margin-bottom: 20px;
+        }
+    
+        .pr-list .pr-item .pr-img-wrapper {
+            background: #fff;
+            width: 201px;
+            padding: 12px;
+            box-shadow: 0 0 7px 0 rgba(0, 0, 0, .1);
+        }
+    
+        .pr-list .pr-item .pr-title-block {
+            width: 24%;
+            padding: 5px 15px;
+            position: relative;
+            align-items: center;
+            vertical-align: middle;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+    
+        .promote-star {
+            width: 20%;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+    
+        .promote-star {
+            width: 20%;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+    
+        .numer {
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            gap: 5px;
+        }
+    
+        .button-tp {
+            width: 20%;
+            align-items: center;
+            vertical-align: middle;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            padding: 20px;
+        }
+    
+        .star-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+    
+        .star svg {
+            color: #f4bd51;
+            width: 20px;
+            height: 20px;
+        }
+    
+        .pr-list .pr-item .pr-title-block::after {
+            content: "";
+            border-width: 20px 9px 20px 17px;
+            border-color: transparent transparent transparent #fff;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            border-style: solid;
+            margin-top: -20px;
+            filter: drop-shadow(2px 0px 1px #ccc);
+        }
+    
+    
+    
+        .pr-item-content {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+        }
+    
+        .pr-item-content .left {
+            background: #fff;
+            box-shadow: 1px 0 4px 0 rgba(0, 0, 0, .25);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0;
+            width: 50%;
+            flex: 1;
+            padding: 10px;
+        }
+    
+        .pr-item-content .right {
+            position: relative;
+            width: 50%;
+            display: flex;
+            background: #15181e;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px 15px 12px;
+            flex: 1;
+    
+            text-align: center;
+        }
+    
+        .pr-description {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+        }
+    
+        .pr-item-content .right .pr-title-block::after {
+            content: "";
+            border-width: 20px 9px 20px 17px;
+            border-color: transparent transparent transparent #fff;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            border-style: solid;
+            margin-top: -20px;
+        }
+    
+        .right .pr-sub-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #fff;
+            letter-spacing: 0.5px;
+            font-family: "Montserrat", sans-serif;
+        }
+    
+        .pr-title {
+            font-size: 13px;
+            color: #fff;
+            font-family: "Open Sans", sans-serif;
+        }
+    
+        .pr-item-content .right .button-tp {
+            width: 100%;
+            padding: 0;
+            margin-top: 10px;
+        }
+    
+        .left .star svg {
+    
+            width: 15px;
+            height: 15px;
+        }
+    
         .mobile-view {
             display: none;
         }
-    }
-
-    @media(max-width:400px) {
-        .button-tp a {
-            font-size: 14px;
-        }
-
-        .top-canadian-casinos {
-            margin: 30px 0;
-        }
-
-        .top-brands h2,
-        .top-canadian-casinos h2 {
-            font-size: 19px;
-        }
-
-        .tp-banner-text-group h2 {
+    
+    
+    
+        .content-tp-footer-inner h5 {
+            color: #fff;
+            font-weight: bold;
             font-size: 24px;
+            margin: 20px 0;
         }
-
-        .right .pr-sub-title {
-            font-size: 17px;
+    
+        .content-tp-footer-inner p {
+            font-size: 16px;
+            margin: 30px 0 0 0;
         }
-    }
-</style>
+    
+        .content-tp-footer-inner ul li {
+            color: #fff;
+            font-size: 16px;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+    
+        .content-tp-footer-inner ul li strong {
+            color: #0b890e;
+        }
+    
+        .content-tp-footer-inner ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            color: #0b890e;
+            width: 6px;
+            height: 6px;
+            background: #0b890e;
+            border-radius: 50%;
+            top: 10px;
+    
+        }
+    
+        footer.footer {
+            background: #000;
+            padding: 20px 0;
+            border-top: 1px solid #343434;
+        }
+    
+        .footer-content p {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    
+        .footer-content a {
+            color: #0b890e;
+            text-decoration: none;
+        }
+    
+        .button-tp a {
+            padding: .7rem 1.75rem;
+            background: #f05a28;
+            border-radius: 999px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: capitalize;
+            transition: all 0.3s ease;
+            display: inline-block;
+            /*margin-top: 20px;*/
+        }
+    
+        .top-brands {
+            padding-bottom: 25px;
+        }
+    
+        .pr-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    
+        .top-canadian-casinos {
+            margin: 40px 0;
+        }
+    
+    
+        .top-canadian-casinos h2 span {
+            color: #0b890e;
+        }
+    
+        .tp-banner {
+            position: relative;
+            height: 15rem;
+            background-position: center;
+            background-size: contain;
+            padding: 215px 0 129px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .tp-banner:after {
+            content: "";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0 0 0/70%);
+            background-blend-mode: multiply;
+        }
+    
+        .tp-banner-text-group h2 {
+            color: #f05a28;
+            text-align: center;
+            padding: 0 0.9375rem;
+            font-size: 1.8rem;
+            margin: 0 auto;
+            max-width: 28.875rem;
+            font-weight: 600;
+        }
+    
+        .pr-img-wrapper {
+            background: #000;
+            width: 100%;
+        }
+    
+        .tp-banner-text {
+            z-index: 1111;
+            position: relative;
+        }
+    
+        .tp_content {
+            padding: 30px 15px;
+        }
+    
+        .pr-img-wrapper.bg_drk {
+            /*min-height: 100px;*/
+            background-color: #000;
+            padding: 10px;
+        }
+    
+        @media(max-width:575px) {
+    
+            .desktop {
+                display: block !important;
+            }
+    
+            .mobile-view {
+                display: none;
+            }
+        }
+    
+        @media(max-width:400px) {
+            .button-tp a {
+                font-size: 14px;
+            }
+    
+            .top-canadian-casinos {
+                margin: 30px 0;
+            }
+    
+            .top-brands h2,
+            .top-canadian-casinos h2 {
+                font-size: 19px;
+            }
+    
+            .tp-banner-text-group h2 {
+                font-size: 24px;
+            }
+    
+            .right .pr-sub-title {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
 
 <body>
     <!-- Header Start -->
