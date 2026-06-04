@@ -210,7 +210,7 @@ img {
 /* Section Heading CSS Start */
 .section_heading {
     color: #111;
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.2;
 }
 
@@ -552,7 +552,7 @@ span.red {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-weight: 700;
     margin: 1.25rem 0;
     line-height: 1.2;
