@@ -72,3 +72,37 @@ window.addEventListener("scroll", function () {
 });
 
 
+
+
+// Language Transltor JS Strat
+const langBtn = document.getElementById("langBtn");
+const dropdown = document.getElementById("langDropdown");
+const currentFlag = document.getElementById("currentFlag");
+
+langBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("active");
+});
+
+document.addEventListener("click", () => {
+    dropdown.classList.remove("active");
+});
+
+document.querySelectorAll(".lang-option").forEach(option => {
+
+    option.addEventListener("click", () => {
+
+        const flag = option.dataset.flag;
+        const url = option.dataset.url;
+
+        // Update button flag immediately
+        currentFlag.src = flag;
+
+        // Redirect to language folder
+        window.location.href = url;
+    });
+
+});
+
+
+// Language Transltor JS End

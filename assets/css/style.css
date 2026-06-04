@@ -1873,3 +1873,89 @@ button.scroll_down {
     }
   }
   
+
+
+
+
+
+  /* Language Translator CSS Start */
+  .language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+}
+
+.lang-btn img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 52px;
+    right: 0;
+
+    width: 180px;
+
+    background: #fff;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition: all 0.25s ease;
+}
+
+.lang-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    overflow: hidden;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 15px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.lang-option:hover {
+    background: #d94e1f;
+    color: #fff;
+}
+
+.lang-option img {
+    width: 24px;
+    height: 18px;
+    border-radius: 3px;
+}
+
+  /* Language Translator CSS End */
