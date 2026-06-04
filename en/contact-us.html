@@ -32,7 +32,7 @@
                     <a href="./shipping">Shipping</a>
                     <a class="btn-touch active" href="./contact-us">Contact Us</a>
                 </div>
-                 <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-2">
                     <a class="btn-outline-custom d-none d-lg-block" href="./jerseys">Explore Now</a>
                     <span class="menu-toggle" onclick="openMenu()">☰</span>
                     <div class="language-switcher">
@@ -41,7 +41,7 @@
                         </button>
                         <div class="lang-dropdown" id="langDropdown">
                             <div class="lang-option" data-lang="fi" data-flag="./assets/images/finland_flag.svg"
-                                data-url="./fi/">
+                                data-url="../fi/">
                                 <img src="./assets/images/finland_flag.svg" alt="Finnish">
                                 <span>Finnish</span>
                             </div>
@@ -163,27 +163,27 @@
                             <input type="text" id="name" placeholder="Name">
                             <small class="error"></small>
                         </div>
-                    
+
                         <div class="jersey_form_group">
                             <label>Email</label>
                             <input type="email" id="email" placeholder="Email">
                             <small class="error"></small>
                         </div>
-                    
+
                         <div class="jersey_form_group">
                             <label>Phone Number</label>
                             <input type="text" id="phone" placeholder="Phone number">
                             <small class="error"></small>
                         </div>
-                    
+
                         <div class="jersey_form_group">
                             <label>Message</label>
                             <textarea id="message" placeholder="Message"></textarea>
                             <small class="error"></small>
                         </div>
-                    
+
                         <button type="submit" class="butn">Send A Message</button>
-                    
+
                     </form>
                 </div>
             </div>
@@ -208,10 +208,10 @@
                         <span>✔</span>
                         <p>Verified certificates of authenticity</p>
                     </div>
-             <div class="feature-item">
-    <span>🌍</span>
-    <p>Trusted by collectors worldwide</p>
-</div>
+                    <div class="feature-item">
+                        <span>🌍</span>
+                        <p>Trusted by collectors worldwide</p>
+                    </div>
                 </div>
                 <div class="footer-top">
                     <div class="footer-logo">
@@ -279,8 +279,9 @@
                         </div>
                     </div>
                 </div>
-                 <div class="footer-bottom">
-                    <p>Copyright © 2026 <a class="text_theme" href="./">Sportxst.com</a> All Rights Reserved. Authentic signatures.
+                <div class="footer-bottom">
+                    <p>Copyright © 2026 <a class="text_theme" href="./">Sportxst.com</a> All Rights Reserved. Authentic
+                        signatures.
                         Verified history. Real basketball moments.</p>
                     <div class="ssl_logo">
                         <div class="ssl_logo_inner bg-contain" style="background-image: url(assets/images/ssl.png);">
@@ -292,22 +293,22 @@
     </footer>
     <!-- Footer End -->
 
-    <div class="loader" id="loader">       
-        <div class="loader_img"  style="background-image: url(assets/images/logo.png);"></div>
+    <div class="loader" id="loader">
+        <div class="loader_img" style="background-image: url(assets/images/logo.png);"></div>
         <div class="spinner"></div>
     </div>
 
 
     <div id="successPopup" class="success-popup">
-    
+
         <div class="popup-inner">
-    
+
 
             <div class="popup-logo">
                 <img src="assets/images/logo.png" alt="Logo">
             </div>
-    
-   
+
+
             <div class="popup-text">
                 <h4>Thank You!</h4>
                 <p>
@@ -317,90 +318,90 @@
                     We truly appreciate your interest in our exclusive basketball memorabilia.
                 </p>
             </div>
-    
+
         </div>
-    
+
     </div>
 
     <script>
         const form = document.getElementById("contactForm");
-        
-        form.addEventListener("submit", function(e) {
+
+        form.addEventListener("submit", function (e) {
             e.preventDefault();
-        
+
             let isValid = true;
-        
+
             const name = document.getElementById("name");
             const email = document.getElementById("email");
             const phone = document.getElementById("phone");
             const message = document.getElementById("message");
-        
+
             const nameRegex = /^[A-Za-z\s]{3,}$/;
             const phoneRegex = /^[0-9]{10}$/;
-        
+
             document.querySelectorAll(".error").forEach(el => el.textContent = "");
             document.querySelectorAll("input, textarea").forEach(el => {
                 el.classList.remove("input-error", "input-success");
             });
-        
+
             if (!nameRegex.test(name.value.trim())) {
                 setError(name, "Enter at least 3 letters (no numbers)");
                 isValid = false;
             } else {
                 setSuccess(name);
             }
-        
+
             if (!email.value.includes("@") || !email.value.includes(".")) {
                 setError(email, "Enter a valid email");
                 isValid = false;
             } else {
                 setSuccess(email);
             }
-        
+
             if (!phoneRegex.test(phone.value.trim())) {
                 setError(phone, "Enter 10 digit phone number");
                 isValid = false;
             } else {
                 setSuccess(phone);
             }
-        
+
             if (message.value.trim().length < 10) {
                 setError(message, "Minimum 10 characters required");
                 isValid = false;
             } else {
                 setSuccess(message);
             }
-        
-       
+
+
             if (isValid) {
                 console.log("Form submitted ✅");
-        
+
                 const popup = document.getElementById("successPopup");
                 popup.classList.add("show");
-        
+
                 setTimeout(() => {
                     popup.classList.remove("show");
                 }, 3000);
-        
+
                 form.reset();
             }
         });
-        
+
         function setError(input, message) {
             const group = input.parentElement;
             const error = group.querySelector(".error");
             error.textContent = message;
             input.classList.add("input-error");
         }
-        
+
         function setSuccess(input) {
             input.classList.add("input-success");
         }
-        </script>
+    </script>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/aos.js"></script>
-    <script src="assets/js/bootstrap.js"></script> 
+    <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 
