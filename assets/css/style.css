@@ -1050,10 +1050,6 @@ h3.badge_heading {
     margin-top: 2.1875rem;
 }
 
-.site-footer  .footer-bottom a{
-    color:#f05a28 !important;
-}
-
 .footer-bottom p {
     color: #fff;
 }
@@ -1119,6 +1115,9 @@ h3.badge_heading {
 }
 .site-footer .footer-content p {
     text-align: left;
+}
+.site-footer  .footer-bottom a{
+    color:#f05a28 !important;
 }
 /* footer end  */
 
