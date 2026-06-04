@@ -1931,10 +1931,6 @@ button.scroll_down:before {
     transition: 0.3s;
 }
 
-.lang-btn:hover {
-    transform: scale(1.05);
-}
-
 .lang-btn img {
     width: 100%;
     height: 100%;
