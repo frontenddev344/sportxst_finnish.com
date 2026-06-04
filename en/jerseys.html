@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>Pelipaidat</title>
+    <title>Jerseys</title>
 </head>
 
 <body>
@@ -21,48 +21,30 @@
     <header class="header">
         <div class="container">
             <div class=" header-container d-flex align-items-center justify-content-between">
-                <a class="d-flex align-items-center gap-2 header_logo" href="./">
+              <a class="d-flex align-items-center gap-2 header_logo" href="./">
                     <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                 </a>
                 <div class="nav-pill d-none d-lg-flex align-items-center">
-                    <a href="./">Etusivu</a>
-                    <a href="./jerseys" class="active">Pelipaidat</a>
-                    <a href="./about-us">Tietoa meistä</a>
-                    <a href="./authentication">Autentikointi</a>
-                    <a href="./shipping">Toimitus</a>
-                    <a class="btn-touch" href="./contact-us">Ota yhteyttä</a>
+                    <a href="./">Home</a>
+                    <a href="./jerseys" class="active">Jerseys</a>
+                    <a href="./about-us">About Us</a>
+                    <a href="./authentication">Authentication</a>
+                    <a href="./shipping">Shipping</a>
+                  <a class="btn-touch" href="./contact-us">Contact Us</a>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                    <a class="btn-outline-custom d-none d-lg-block" href="./jerseys">Tutustu nyt</a>
+                    <a class="btn-outline-custom d-none d-lg-block" href="./jerseys">Explore Now</a>
                     <span class="menu-toggle" onclick="openMenu()">☰</span>
-                    <div class="language-switcher">
-                        <button class="lang-btn" id="langBtn">
-                            <img id="currentFlag" src="./assets/images/finland_flag.svg" alt="Finnish">
-                        </button>
-                        <div class="lang-dropdown" id="langDropdown">                           
-                            <div class="lang-option" data-lang="en" data-flag="./assets/images/english_flag.png"
-                                data-url="./en/">
-
-                                <img src="./assets/images/english_flag.png" alt="English">
-                                <span>English</span>
-                            </div>                            
-                            <div class="lang-option" data-lang="fi" data-flag="./assets/images/finland_flag.svg"
-                                data-url="./fi/">
-                                <img src="./assets/images/finland_flag.svg" alt="Finnish">
-                                <span>Finnish</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div id="sidebar" class="sidebar">
                     <div class="close-btn" onclick="closeMenu()">✕</div>
-                    <a href="./" class="active">Etusivu</a>
-                    <a href="./jerseys" class="active">Pelipaidat</a>
-                    <a href="./about-us">Tietoa meistä</a>
-                    <a href="./authentication">Autentikointi</a>
-                    <a href="./shipping">Toimitus</a>
-                    <a class="./btn-touch w-100 mt-3" href="./contact-us">Ota yhteyttä</a>
-                    <a class="./btn-outline-custom w-100 mt-2" href="./jerseys">Tutustu nyt</a>
+                    <a href="./">Home</a>
+                    <a href="./jerseys" class="active">Jerseys</a>
+                    <a href="./about-us">About Us</a>
+                    <a href="./authentication">Authentication</a>
+                    <a href="./shipping">Shipping</a>
+                       <a class="./btn-touch w-100 mt-3" href="./contact-us">Contact Us</a>
+                    <a class="./btn-outline-custom w-100 mt-2" href="./jerseys">Explore Now</a>
                 </div>
             </div>
         </div>
@@ -75,7 +57,7 @@
             <div class="banner_wrap">
                 <div class="banner_content">
                     <h1 class="mb-4">
-                        Pelipaidat
+                        Jerseys
                     </h1>
                 </div>
             </div>
@@ -88,25 +70,26 @@
         <div class="container">
             <div class="featured-products-content">
                 <div class="collection-card row align-items-center mt-5">
-                    <div class="col-lg-6 text-center p-4 collection-card-img" data-aos="fade-right"
-                        data-aos-duration="1000">
+                    <div class="col-lg-6 text-center p-4 collection-card-img" data-aos="fade-right"  data-aos-duration="1000">
                         <img src="assets/images/jersey_after_banner.png" alt="Jersey" class="img-fluid jersey-img">
                     </div>
-                    <div class="col-lg-6 p-4 p-lg-5" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="col-lg-6 p-4 p-lg-5" data-aos="fade-left"  data-aos-duration="1000">
                         <h2 class="mb-3 section_heading">
-                            Aitoja koripallopelipaitoja, jotka ovat pelin suurimpien tähtien signeeraamia
+                            Authentic basketball jerseys signed by the game’s biggest names
                         </h2>
                         <p class="mb-4">
-                            Tutustu huolellisesti kuratoituun valikoimaan aitoja, nimikirjoitettuja koripallopelipaitoja
-                            lajin huippupelaajilta. Jokainen tuote edustaa yhtä hetkeä pelin historiassa – vangiten
-                            taidon, perinnön ja intohimon.
+                            Explore a curated selection of genuine, autographed basketball jerseys from top players
+                            across the sport. Each piece represents a moment in the game—capturing skill, legacy, and
+                            passion.
                         </p>
                         <p class="mb-4">
-                            Jokainen pelipaita signeerataan yksityisissä tilaisuuksissa ja varmennetaan huolellisesti
-                            omien asiantuntijoidemme toimesta. Ei massatapahtumia. Ei kolmannen osapuolen hankintaa.
-                            Vain aitoa koripallohistoriaa, jonka voit omistaa.
+                            At our core, every jersey is signed during private sessions and carefully verified by our
+                            in-house experts. No mass signings. No third-party sourcing. Just real basketball history
+                            you can own.
                         </p>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -116,11 +99,12 @@
     <!-- Featured Legends Section Start -->
     <section class="featured_legends bg_dark hide">
         <div class="container">
-            <h2 class="section_heading mb-5 text_white text-center">Esittelyssä <span class="red">legendat</span></h2>
+            <h2 class="section_heading mb-5 text_white text-center">Featured <span class="red">Legends</span></h2>
 
             <div class="legends-grid">
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="800">
+
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="800">
                     <div class="legend-img">
                         <img src="assets/images/michael_jordan.jpg" alt="Michael Jordan">
                         <div class="common_overlay"></div>
@@ -128,17 +112,17 @@
 
                     <div class="legend-content">
                         <h3>Michael Jordan</h3>
-                        <p class="signed-text">Signeerattu Chicago Bulls -pelipaita</p>
+                        <p class="signed-text">Signed Chicago Bulls jersey</p>
                         <p class="desc">
-                            Ajaton keräilyesine yhdeltä koripallon suurimmista ikoneista, joka kuvastaa
-                            mestaruusperintöä
-                            ja vertaansa vailla olevaa vaikutusta lajiin.
+                            A timeless piece from one of basketball’s greatest icons, capturing championship legacy and
+                            unmatched influence on the game.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="1000">
+
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="1000">
                     <div class="legend-img">
                         <img src="assets/images/lebron_james.png" alt="LeBron James">
                         <div class="common_overlay"></div>
@@ -146,109 +130,111 @@
 
                     <div class="legend-content">
                         <h3>LeBron James</h3>
-                        <p class="signed-text">Signeerattu joukkuepelipaita</p>
+                        <p class="signed-text">Signed team jersey</p>
                         <p class="desc">
-                            Ikoninen keräilyesine yhdeltä modernin koripallohistorian hallitsevimmista ja
-                            monipuolisimmista
-                            pelaajista.
+                            An iconic collectible representing one of the most dominant and versatile players in modern
+                            basketball history.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="1200">
+
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="1200">
                     <div class="legend-img">
                         <img src="assets/images/kobe_bryant.png" alt="Kobe Bryant">
                     </div>
 
                     <div class="legend-content">
                         <h3>Kobe Bryant</h3>
-                        <p class="signed-text">Signeerattu Los Angeles -pelipaita</p>
+                        <p class="signed-text">Signed Los Angeles jersey</p>
                         <p class="desc">
-                            Kunnianosoitus legendaariselle uralle, joka symboloi päättäväisyyttä, erinomaisuutta ja
-                            unohtumattomia hetkiä kentällä.
+                            A tribute to a legendary career, symbolizing determination, excellence, and unforgettable
+                            moments on the court.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="1400">
+
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="1400">
                     <div class="legend-img">
                         <img src="assets/images/magic_johnson.png" alt="Magic Johnson">
                     </div>
 
                     <div class="legend-content">
                         <h3>Magic Johnson</h3>
-                        <p class="signed-text">Signeerattu Lakers-pelipaita</p>
+                        <p class="signed-text">Signed Lakers jersey</p>
                         <p class="desc">
-                            Klassinen keräilyesine, joka kunnioittaa yhtä lajin kaikkien aikojen parhaista
-                            pelintekijöistä
-                            ja johtajista.
+                            A classic collectible honoring one of the greatest playmakers and leaders the sport has ever
+                            seen.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="800">
+
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="800">
                     <div class="legend-img">
                         <img src="assets/images/larry_bird.png" alt="Larry Bird">
                     </div>
 
                     <div class="legend-content">
                         <h3>Larry Bird</h3>
-                        <p class="signed-text">Signeerattu Boston-pelipaita</p>
+                        <p class="signed-text">Signed Boston jersey</p>
                         <p class="desc">
-                            Historiallinen keräilyesine, joka juhlistaa yhtä koripallon kovimmista kilpailijoista ja
-                            taitavimmista heittäjistä.
+                            A historic piece celebrating one of basketball’s fiercest competitors and most skilled
+                            shooters.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="1000">
+
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="1000">
                     <div class="legend-img">
                         <img src="assets/images/stephen_curry.png" alt="Stephen Curry">
                     </div>
 
                     <div class="legend-content">
                         <h3>Stephen Curry</h3>
-                        <p class="signed-text">Signeerattu Golden State -pelipaita</p>
+                        <p class="signed-text">Signed Golden State jersey</p>
                         <p class="desc">
-                            Moderni klassikko, joka edustaa pelaajaa, joka mullisti pelin huipputason heittotaidollaan
-                            ja innovatiivisuudellaan.
+                            A modern classic representing the player who transformed the game with elite shooting and
+                            innovation.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="1200">
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="1200">
                     <div class="legend-img">
                         <img src="assets/images/kevin_durant.png" alt="Kevin Durant">
                     </div>
 
                     <div class="legend-content">
                         <h3>Kevin Durant</h3>
-                        <p class="signed-text">Signeerattu joukkuepelipaita</p>
+                        <p class="signed-text">Signed team jersey</p>
                         <p class="desc">
-                            Ensiluokkainen keräilyesine yhdeltä koripallohistorian lahjakkaimmista pistemiehistä.
+                            A premium collectible from one of the most gifted scorers in basketball history.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
-                <div class="legend-card" data-aos="zoom-in" data-aos-duration="1400">
+                <div class="legend-card" data-aos="zoom-in"  data-aos-duration="1400">
                     <div class="legend-img">
                         <img src="assets/images/giannis_antetokounmpo.png" alt="Giannis">
                     </div>
 
                     <div class="legend-content">
                         <h3>Giannis Antetokounmpo</h3>
-                        <p class="signed-text">Signeerattu Milwaukee-pelipaita</p>
+                        <p class="signed-text">Signed Milwaukee jersey</p>
                         <p class="desc">
-                            Erityinen keräilyesine, joka heijastaa voimaa, monipuolisuutta ja maailmanlaajuisen
-                            koripallotähden nousua.
+                            A standout piece reflecting power, versatility, and the rise of a global basketball
+                            superstar.
                         </p>
-                        <a href="contact-us#contact_page" class="butn black">Näytä lisää</a>
+                        <a href="contact-us#contact_page" class="butn black">View More</a>
                     </div>
                 </div>
 
@@ -261,48 +247,49 @@
     <section class="jersey_cards hide">
         <div class="container">
             <div class="jersey_page_cards">
-                <div class="jersey_page_card" data-aos="fade-right" data-aos-duration="1200">
+                <div class="jersey_page_card" data-aos="fade-right"  data-aos-duration="1200">
                     <img src="assets/images/jersey_card1_img.png" alt="Basketball Jersey">
                     <div class="jersey_page_card_content">
                         <div class="jersey_page_accent_bar"></div>
-                        <h3><span class="red">Ensiluokkaisia </span> koripallokeräilyesineitä</h3>
+                        <h3><span class="red">Premium </span> Basketball Collectibles</h3>
                         <ul>
-                            <li>Ikoniset joukkuepelipaidat</li>
-                            <li>Otteluhenkiset ja kansainväliset tuotteet</li>
-                            <li>Legendaariset pelaajat ja nousevat tähdet</li>
-                            <li>Rajoitetun erän kehystetyt näyttelykappaleet</li>
+                            <li>Iconic team jerseys</li>
+                            <li>Game-inspired & international pieces</li>
+                            <li>Legendary players & rising stars</li>
+                            <li>Limited edition framed displays</li>
                         </ul>
-                        <p>Jokainen tuote on valittu sen merkityksen, kunnon ja pitkäaikaisen arvon perusteella.</p>
+                        <p>Every item is selected for significance, condition, and long-term value.</p>
                     </div>
                 </div>
 
-                <div class="jersey_page_card" data-aos="fade-up" data-aos-duration="1200">
+
+                <div class="jersey_page_card" data-aos="fade-up"  data-aos-duration="1200">
                     <img src="assets/images/jersey_card2_img.png" alt="Authenticity Certificate">
                     <div class="jersey_page_card_content">
                         <div class="jersey_page_accent_bar"></div>
-                        <h3><span class="red">Aitous, </span> johon voit luottaa</h3>
+                        <h3><span class="red">Authenticity </span> You Can Trust</h3>
                         <ul>
-                            <li>Peukaloinnilta suojattu aitoustodistus</li>
-                            <li>Yksilöllinen varmennustunnus</li>
-                            <li>Dokumentoidut signeeraustiedot</li>
-                            <li>Turvallinen suojapakkaus</li>
+                            <li>Tamper-proof certificate of authenticity</li>
+                            <li>Unique verification ID</li>
+                            <li>Documented signing details</li>
+                            <li>Secure protective packaging</li>
                         </ul>
-                        <p>Suunniteltu antamaan keräilijöille täydellinen luottamus jokaiseen ostokseen.</p>
+                        <p>Built to give collectors total confidence in every purchase.</p>
                     </div>
                 </div>
 
-                <div class="jersey_page_card" data-aos="fade-left" data-aos-duration="1200">
+                <div class="jersey_page_card" data-aos="fade-left"  data-aos-duration="1200">
                     <img src="assets/images/jersey_card3_img.png" alt="Framed Jersey Display">
                     <div class="jersey_page_card_content">
                         <div class="jersey_page_accent_bar"></div>
-                        <h3><span class="red">Asiantuntevasti</span> esille tuotuna</h3>
+                        <h3><span class="red">Expertly</span> Presented</h3>
                         <ul>
-                            <li>Kehystämättömät signeeratut tuotteet</li>
-                            <li>Ammattimaisesti kehystetyt, esillepanoon valmiit tuotteet</li>
-                            <li>Rajoitetun erän näyttävät keräilyesineet</li>
+                            <li>Unframed signed items</li>
+                            <li>Professionally framed, display-ready pieces</li>
+                            <li>Limited edition showcase collectibles</li>
                         </ul>
-                        <p>Kaikki kehystetyt tuotteet valmistetaan ensiluokkaisista materiaaleista laadun
-                            säilyttämiseksi ja esillepanon parantamiseksi.</p>
+                        <p>All framed items are crafted using premium materials to preserve quality and enhance
+                            presentation.</p>
                     </div>
                 </div>
 
@@ -314,19 +301,19 @@
     <!-- Newsletter Section Start -->
     <section class="newsletter-section hide">
         <div class="container">
-            <div class="newsletter_content" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="newsletter_content" data-aos="zoom-in"  data-aos-duration="1500">
                 <h2 class="section_heading text_white mb-4">
-                    <span class="red">Faneille </span> ja <span class="red">keräilijöille</span>
+                    For <span class="red">Fans </span> and <span class="red">Collectors</span>
                 </h2>
 
                 <p class="newsletter-text text_white">
-                    Olitpa aloittamassa kokoelmaasi tai etsimässä näyttävää keskipistettä, signeeratut
-                    koripallomuistoesineet tarjoavat merkityksellisen yhteyden pelin suurimpiin hetkiin.
+                    Whether you're starting your collection or searching for a standout centerpiece, signed basketball
+                    memorabilia offers a meaningful connection to the game’s greatest moments.
                 </p>
                 <p class="newsletter-text text_white">
-                    Olitpa aloittamassa kokoelmaasi tai etsimässä näyttävää keskipistettä, signeeratut
-                    koripallomuistoesineet tarjoavat merkityksellisen yhteyden pelin suurimpiin hetkiin.
-                </p>
+                    Whether you're starting your collection or searching for a standout centerpiece, signed basketball
+                    memorabilia offers a meaningful connection to the game’s greatest moments.
+                </p>              
             </div>
         </div>
     </section>
@@ -339,61 +326,60 @@
                 <div class="footer-features">
                     <div class="feature-item">
                         <span>✔</span>
-                        <p>Aitous taattu</p>
+                        <p>Authenticity guaranteed</p>
                     </div>
                     <div class="feature-item">
                         <span>🏅</span>
-                        <p>Eksklusiiviset pelaajien nimikirjoitukset</p>
+                        <p>Exclusive player autographs</p>
                     </div>
                     <div class="feature-item">
                         <span>✔</span>
-                        <p>Varmennetut aitoustodistukset</p>
+                        <p>Verified certificates of authenticity</p>
                     </div>
-                    <div class="feature-item">
-                        <span>🌍</span>
-                        <p>Keräilijöiden luottama maailmanlaajuisesti</p>
-                    </div>
+             <div class="feature-item">
+    <span>🌍</span>
+    <p>Trusted by collectors worldwide</p>
+</div>
                 </div>
                 <div class="footer-top">
                     <div class="footer-logo">
                         <a href="./" class="bg_center_contain"></a>
                         <p class="text_theme mt-2 footer_logo_text">
-                            Tuomme fanit lähemmäksi peliä <span class="red">aitojen koripallomuistoesineiden
-                                kautta.</span>
+                            Bringing fans closer to the game through <span class="red">authentic basketball memorabilia.</span>
                         </p>
                     </div>
                     <div class="footer-links">
                         <h3>
-                            Pikavalinnat
+                            Quick Links
                         </h3>
                         <ul>
-                            <li> <a href="./" class="active">Etusivu</a></li>
-                            <li><a href="./jerseys">Pelipaidat</a></li>
-                            <li><a href="./about-us">Tietoa meistä</a></li>
-                            <li><a href="./authentication">Autentikointi</a></li>
-                            <li><a href="./shipping">Toimitus</a></li>
-                            <li><a href="./contact-us">Ota yhteyttä</a></li>
+                            <li> <a href="./" class="active">Home</a></li>
+                            <li><a href="./jerseys">Jerseys</a></li>
+                            <li><a href="./about-us">About Us</a></li>
+                            <li><a href="./authentication">Authentication</a></li>
+                            <li><a href="./shipping">Shipping</a></li>
+                            <li><a href="./contact-us">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="footer-links">
                         <h3>
-                            Asiakastuki
+                            Customer Support
                         </h3>
                         <ul>
-                            <li><a href="./returns-policy">Palautukset ja vaihdot</a></li>
-                            <li><a href="./terms-conditions">Käyttöehdot</a></li>
-                            <li><a href="./privacy-policy">Tietosuojakäytäntö</a></li>
+                            <li><a href="./returns-policy">Returns & Exchanges</a></li>
+                            <li><a href="./terms-conditions">Terms & Conditions </a></li>
+                            <li><a href="./privacy-policy">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="footer-contact">
                         <h3>
-                            Ota yhteyttä
+                            Get in Touch
                         </h3>
                         <p class="mb-3">
-                            Onko sinulla kysyttävää tuotteistamme? Olemme täällä auttamassa.
+                            Have questions about our products? We’re here to help.
                         </p>
                         <p class="mb-3">
-                            Maanantai – Perjantai
+                            Monday – Friday
                         </p>
                         <p class="mb-3">
                             9:00 – 17:00 (GMT)
@@ -420,11 +406,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                      <p>Tekijänoikeus © 2026 <a class="text_theme" href="./"> Sportxst.com </a> Kaikki oikeudet pidätetään.
-                        Aidot
-                        nimikirjoitukset.
-                        Varmennettu historia. Aidot koripallohetket.</p>
+                 <div class="footer-bottom">
+                    <p>Copyright © 2026 <a class="text_theme" href="./">Sportxst.com</a> All Rights Reserved. Authentic signatures.
+                        Verified history. Real basketball moments.</p>
                     <div class="ssl_logo">
                         <div class="ssl_logo_inner bg-contain" style="background-image: url(assets/images/ssl.png);">
                         </div>
@@ -435,8 +419,8 @@
     </footer>
     <!-- Footer End -->
 
-    <div class="loader" id="loader">
-        <div class="loader_img" style="background-image: url(assets/images/logo.png);"></div>
+    <div class="loader" id="loader">       
+        <div class="loader_img"  style="background-image: url(assets/images/logo.png);"></div>
         <div class="spinner"></div>
     </div>
 

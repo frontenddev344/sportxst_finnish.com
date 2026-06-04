@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>Autentikointi</title>
+    <title>Authentication</title>
 </head>
 
 <body>
@@ -21,48 +21,30 @@
     <header class="header">
         <div class="container">
             <div class=" header-container d-flex align-items-center justify-content-between">
-                <a class="d-flex align-items-center gap-2 header_logo" href="./">
+              <a class="d-flex align-items-center gap-2 header_logo" href="./">
                     <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                 </a>
                 <div class="nav-pill d-none d-lg-flex align-items-center">
-                    <a href="./">Etusivu</a>
-                    <a href="./jerseys">Pelipaidat</a>
-                    <a href="./about-us">Tietoa meistä</a>
-                    <a href="./authentication" class="active">Autentikointi</a>
-                    <a href="./shipping">Toimitus</a>
-                    <a class="btn-touch" href="./contact-us">Ota yhteyttä</a>
+                    <a href="./">Home</a>
+                    <a href="./jerseys">Jerseys</a>
+                    <a href="./about-us">About Us</a>
+                    <a href="./authentication" class="active">Authentication</a>
+                    <a href="./shipping">Shipping</a>
+                  <a class="btn-touch" href="./contact-us">Contact Us</a>
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                    <a class="btn-outline-custom d-none d-lg-block" href="./jerseys">Tutustu nyt</a>
+                    <a class="btn-outline-custom d-none d-lg-block" href="./jerseys">Explore Now</a>
                     <span class="menu-toggle" onclick="openMenu()">☰</span>
-                    <div class="language-switcher">
-                        <button class="lang-btn" id="langBtn">
-                            <img id="currentFlag" src="./assets/images/finland_flag.svg" alt="Finnish">
-                        </button>
-                        <div class="lang-dropdown" id="langDropdown">                           
-                            <div class="lang-option" data-lang="en" data-flag="./assets/images/english_flag.png"
-                                data-url="./en/">
-
-                                <img src="./assets/images/english_flag.png" alt="English">
-                                <span>English</span>
-                            </div>                            
-                            <div class="lang-option" data-lang="fi" data-flag="./assets/images/finland_flag.svg"
-                                data-url="./fi/">
-                                <img src="./assets/images/finland_flag.svg" alt="Finnish">
-                                <span>Finnish</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div id="sidebar" class="sidebar">
                     <div class="close-btn" onclick="closeMenu()">✕</div>
-                    <a href="./">Etusivu</a>
-                    <a href="./jerseys">Pelipaidat</a>
-                    <a href="./about-us">Tietoa meistä</a>
-                    <a href="./authentication" class="active">Autentikointi</a>
-                    <a href="./shipping">Toimitus</a>
-                    <a class="./btn-touch w-100 mt-3" href="./contact-us">Ota yhteyttä</a>
-                    <a class="./btn-outline-custom w-100 mt-2" href="./jerseys">Tutustu nyt</a>
+                    <a href="./">Home</a>
+                    <a href="./jerseys">Jerseys</a>
+                    <a href="./about-us">About Us</a>
+                    <a href="./authentication" class="active">Authentication</a>
+                    <a href="./shipping">Shipping</a>
+                       <a class="./btn-touch w-100 mt-3" href="./contact-us">Contact Us</a>
+                    <a class="./btn-outline-custom w-100 mt-2" href="./jerseysretu">Explore Now</a>
                 </div>
             </div>
         </div>
@@ -72,15 +54,15 @@
     <!-- Banner  Start -->
     <section class="sub_banner" style="background-image: url('assets/images/authentication_banner.jpg');">
         <div class="container">
-            <div class="banner_wrap">
+            <div class="banner_wrap" >
                 <div class="banner_content">
                     <h1 class="mb-4">
-                        Autentikointi
+                        Authentication
                     </h1>
                     <p class="text-white mt-4">
-                        Sportxstillä aitous ei ole vain ominaisuus – se on kaiken toimintamme perusta. Tiedämme,
-                        että kun sijoitat signeerattuihin koripallomuistoesineisiin, luottamus on yhtä tärkeää kuin
-                        itse nimikirjoitus.
+                        At Sportxst, authenticity isn’t just a feature-it’s the foundation of everything we do. We know
+                        that when you invest in signed basketball memorabilia, trust matters just as much as the
+                        signature itself.
                     </p>
                 </div>
             </div>
@@ -89,17 +71,14 @@
     <!-- Banner  End -->
 
     <!-- Authencation Popup Section Start -->
-    <section class="authentication_popup_sec py-7 hide" data-aos="fade-down" data-aos-duration="1200">
+    <section class="authentication_popup_sec py-7 hide" data-aos="fade-down"  data-aos-duration="1200">
         <div class="container">
             <div class="authentication_content">
                 <h2 class="mb-4 section_heading">
-                    100 % aidot, käsin signeeratut koripallokeräilyesineet
+                    100% Genuine, Hand-Signed Basketball Collectibles
                 </h2>
                 <p>
-                    Jokainen alustamme kautta saatavilla oleva tuote on täysin aito ja urheilijan henkilökohtaisesti
-                    signeeraama. Emme tarjoa kopioita, painettuja nimikirjoituksia tai massatuotettuja signeerauksia.
-                    Jokainen esine edustaa aitoa hetkeä koripallohistoriassa – varmennettuna, dokumentoituna ja valmiina
-                    osaksi kokoelmaasi.
+                    Every item available through our platform is fully authentic and personally signed by the athlete. We do not offer replicas, prints, or mass-produced autographs. Each piece represents a real moment in basketball history—verified, documented, and ready to be part of your collection.
                 </p>
             </div>
         </div>
@@ -111,44 +90,41 @@
         <div class="container">
             <div class="featured-products-content">
                 <div class="collection-card white row">
-                    <div class="col-lg-6 text-center p-4 collection-card-img" data-aos="zoom-in"
-                        data-aos-duration="1200">
+                    <div class="col-lg-6 text-center p-4 collection-card-img" data-aos="zoom-in"  data-aos-duration="1200">
                         <img src="assets/images/authentcation_after_banner.png" alt="Jersey" class="jersey-img">
                     </div>
-                    <div class="col-lg-6 p-4 p-lg-5" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="col-lg-6 p-4 p-lg-5" data-aos="fade-left"  data-aos-duration="1200">
                         <h3 class="mb-3 text_white">
-                            <span class="red">Riippumaton autentikointi </span> johon voit luottaa
+                            <span class="red">Independent Authentication </span> You Can Trust
                         </h3>
                         <p class="mb-4 text_white">
-                            Kaikki signeeratut koripallokeräilyesineet varmennetaan arvostettujen, riippumattomien
-                            autentikointiasiantuntijoiden toimesta. Nämä ammattilaiset tutkivat jokaisen
-                            nimikirjoituksen
-                            huolellisesti käyttäen kehittyneitä menetelmiä, kuten nimikirjoitusten vertailua,
-                            historiallista vahvistusta ja yksityiskohtaista analyysia.
+                            All signed basketball collectibles are verified by respected, independent authentication
+                            specialists. These professionals carefully examine each signature using advanced methods
+                            such as signature comparison, historical verification, and detailed analysis.
                         </p>
                         <p class="mb-4 text_white">
-                            Jokainen varmennettu tuote sisältää:
+                            Every authenticated item includes:
                         </p>
                         <ul class="mb-4 text_white">
                             <li>
                                 <p>
-                                    ✔ Virallinen aitoustodistus (COA)
+                                    ✔ Official Certificate of Authenticity (COA)
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    ✔ Yksilölliset varmennusnumerot tai hologrammit (soveltuvin osin)
+                                    ✔ Unique verification numbers or holograms (where applicable)
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    ✔ Selkeän dokumentaation pitkäaikaisen arvon ja alkuperän tukemiseksi
+                                    ✔ Clear documentation to support long-term value and provenance
                                 </p>
                             </li>
                         </ul>
                         <p class="mb-4 text_white">
-                            Tämä varmistaa, että voit luottavaisin mielin esitellä, lahjoittaa, vakuuttaa tai myydä
-                            keräilyesineesi edelleen täysin huoletta.
+                            This ensures you can confidently display, gift, insure, or resell your collectible with
+                            complete peace of mind.
                         </p>
                     </div>
                 </div>
@@ -161,70 +137,62 @@
     <section class="authentication_cards_sec py-10 hide">
         <div class="container">
             <div class="jersey_page_cards">
-                <div class="jersey_page_card" data-aos="fade-right" data-aos-duration="900">
+                <div class="jersey_page_card" data-aos="fade-right"  data-aos-duration="900">
                     <img src="assets/images/authenticity_card_1.png" alt="Basketball Jersey">
                     <div class="jersey_page_card_content">
                         <div class="jersey_page_accent_bar"></div>
                         <h3>
-                            Miksi <span class="red">autentikointi</span> on tärkeää
+                            Why <span class="red"> Authentication </span> Matters
                         </h3>
                         <p>
-                            Koripallomuistoesineiden markkinat ovat täynnä varmentamattomia tuotteita. Ilman
-                            asianmukaista
-                            autentikointia nimikirjoitukset menettävät uskottavuutensa – ja arvonsa keräilijöiden
-                            silmissä.
+                            The basketball memorabilia market is filled with unverified items. Without proper authentication, signatures lose their credibility—and their value to collectors.
                         </p>
                         <p>
-                            Valitessasi alustamme valitset:
+                            When you choose our platform, you’re choosing:
                         </p>
                         <ul>
                             <li>
-                                Varmennetun aitouden, johon voit luottaa
+                                Verified authenticity you can trust
                             </li>
                             <li>
-                                Keräilijätason laatuiset tuotteet
+                                Collector-grade quality pieces
                             </li>
                             <li>
-                                Luottamuksen jokaiseen ostokseen
-                            </li>
-                        </ul>
+                                Confidence with every purchase
+                            </li>                         
+                        </ul>                        
                     </div>
                 </div>
 
-                <div class="jersey_page_card" data-aos="fade-down" data-aos-duration="1200">
+
+                <div class="jersey_page_card" data-aos="fade-down"  data-aos-duration="1200">
                     <img src="assets/images/authenticity_card_2.jpg" alt="Authenticity Certificate">
                     <div class="jersey_page_card_content">
                         <div class="jersey_page_accent_bar"></div>
                         <h3>
-                            <span class="red">Sitoutumisemme</span> keräilijöihin
+                            Our <span class="red">Commitment </span> to Collectors
                         </h3>
                         <p>
-                            Teemme yhteistyötä vain luotettavien lähteiden kanssa ja tarkastamme jokaisen tuotteen
-                            perusteellisesti ennen kuin siitä tulee osa kokoelmaamme. Tavoitteemme on yksinkertainen:
-                            tarjota aitoja, signeerattuja koripallomuistoesineitä, joihin fanit ja keräilijät voivat
-                            luottaa – tänään ja tulevina vuosina.
-                        </p>
+                            We partner only with trusted sources and thoroughly review every item before it becomes part of our collection. Our goal is simple: to provide authentic, signed basketball memorabilia that fans and collectors can rely on—today and for years to come.
+                        </p>                       
                     </div>
                 </div>
 
-                <div class="jersey_page_card" data-aos="fade-left" data-aos-duration="1500">
+                <div class="jersey_page_card" data-aos="fade-left"  data-aos-duration="1500">
                     <img src="assets/images/authenticity_card_3.png" alt="Framed Jersey Display">
                     <div class="jersey_page_card_content">
                         <div class="jersey_page_accent_bar"></div>
                         <h3>
-                            <span class="red">Osta</span> luottavaisin mielin
+                           <span class="red">Buy</span>  with Confidence
                         </h3>
                         <p>
-                            Ostaessasi meiltä et hanki vain signeerattua koripallopelipaitaa – sijoitat varmennettuun
-                            osaan
-                            pelin historiaa, jota tukevat aitous, läpinäkyvyys ja asiantuntemus.
+                            When you purchase from us, you’re not just buying a signed basketball jersey—you’re investing in a verified piece of the game’s history, supported by authenticity, transparency, and expertise.
                         </p>
                         <p>
-                            Jos sinulla on kysyttävää autentikoinnista, sertifioinnista tai tietystä tuotteesta,
-                            tiimimme auttaa sinua aina mielellään.
-                        </p>
+                            If you have any questions about authentication, certification, or a specific item, our team is always here to assist you
+                        </p>                      
                         <p class="text_theme">
-                            Aidot nimikirjoitukset. Luotettava autentikointi. Aitoa koripallohistoriaa.
+                            Genuine signatures. Trusted authentication. Real basketball history.
                         </p>
                     </div>
                 </div>
@@ -240,61 +208,60 @@
                 <div class="footer-features">
                     <div class="feature-item">
                         <span>✔</span>
-                        <p>Aitous taattu</p>
+                        <p>Authenticity guaranteed</p>
                     </div>
                     <div class="feature-item">
                         <span>🏅</span>
-                        <p>Eksklusiiviset pelaajien nimikirjoitukset</p>
+                        <p>Exclusive player autographs</p>
                     </div>
                     <div class="feature-item">
                         <span>✔</span>
-                        <p>Varmennetut aitoustodistukset</p>
+                        <p>Verified certificates of authenticity</p>
                     </div>
-                    <div class="feature-item">
-                        <span>🌍</span>
-                        <p>Keräilijöiden luottama maailmanlaajuisesti</p>
-                    </div>
+             <div class="feature-item">
+    <span>🌍</span>
+    <p>Trusted by collectors worldwide</p>
+</div>
                 </div>
                 <div class="footer-top">
                     <div class="footer-logo">
                         <a href="./" class="bg_center_contain"></a>
                         <p class="text_theme mt-2 footer_logo_text">
-                            Tuomme fanit lähemmäksi peliä <span class="red">aitojen koripallomuistoesineiden
-                                kautta.</span>
+                            Bringing fans closer to the game through <span class="red">authentic basketball memorabilia.</span>
                         </p>
                     </div>
                     <div class="footer-links">
                         <h3>
-                            Pikavalinnat
+                            Quick Links
                         </h3>
                         <ul>
-                            <li> <a href="./" class="active">Etusivu</a></li>
-                            <li><a href="./jerseys">Pelipaidat</a></li>
-                            <li><a href="./about-us">Tietoa meistä</a></li>
-                            <li><a href="./authentication">Autentikointi</a></li>
-                            <li><a href="./shipping">Toimitus</a></li>
-                            <li><a href="./contact-us">Ota yhteyttä</a></li>
+                            <li> <a href="./" class="active">Home</a></li>
+                            <li><a href="./jerseys">Jerseys</a></li>
+                            <li><a href="./about-us">About Us</a></li>
+                            <li><a href="./authentication">Authentication</a></li>
+                            <li><a href="./shipping">Shipping</a></li>
+                            <li><a href="./contact-us">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="footer-links">
                         <h3>
-                            Asiakastuki
+                            Customer Support
                         </h3>
                         <ul>
-                            <li><a href="./returns-policy">Palautukset ja vaihdot</a></li>
-                            <li><a href="./terms-conditions">Käyttöehdot</a></li>
-                            <li><a href="./privacy-policy">Tietosuojakäytäntö</a></li>
+                            <li><a href="./returns-policy">Returns & Exchanges</a></li>
+                            <li><a href="./terms-conditions">Terms & Conditions </a></li>
+                            <li><a href="./privacy-policy">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="footer-contact">
                         <h3>
-                            Ota yhteyttä
+                            Get in Touch
                         </h3>
                         <p class="mb-3">
-                            Onko sinulla kysyttävää tuotteistamme? Olemme täällä auttamassa.
+                            Have questions about our products? We’re here to help.
                         </p>
                         <p class="mb-3">
-                            Maanantai – Perjantai
+                            Monday – Friday
                         </p>
                         <p class="mb-3">
                             9:00 – 17:00 (GMT)
@@ -321,11 +288,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                      <p>Tekijänoikeus © 2026 <a class="text_theme" href="./"> Sportxst.com </a> Kaikki oikeudet pidätetään.
-                        Aidot
-                        nimikirjoitukset.
-                        Varmennettu historia. Aidot koripallohetket.</p>
+                 <div class="footer-bottom">
+                    <p>Copyright © 2026 <a class="text_theme" href="./">Sportxst.com</a> All Rights Reserved. Authentic signatures.
+                        Verified history. Real basketball moments.</p>
                     <div class="ssl_logo">
                         <div class="ssl_logo_inner bg-contain" style="background-image: url(assets/images/ssl.png);">
                         </div>
@@ -336,8 +301,8 @@
     </footer>
     <!-- Footer End -->
 
-    <div class="loader" id="loader">
-        <div class="loader_img" style="background-image: url(assets/images/logo.png);"></div>
+    <div class="loader" id="loader">       
+        <div class="loader_img"  style="background-image: url(assets/images/logo.png);"></div>
         <div class="spinner"></div>
     </div>
     <script src="assets/js/jquery.js"></script>
